@@ -41,3 +41,12 @@ var tenToTwo = function(number){
     }
     return str
 }
+
+function f1(){
+    return console.log('f1 finish')
+}
+
+function f2(){
+    f1()
+    return console.log('f2 finish')
+}
