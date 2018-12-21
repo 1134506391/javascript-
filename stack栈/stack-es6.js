@@ -25,4 +25,19 @@ class StackEs6{
     }
 }
 
-var s2 = new StackEs6()
+// var s2 = new StackEs6()
+
+var tenToTwo = function(number){
+    var s2 = new StackEs6()
+    var remainder  //余数
+    var str = '';
+    while(number >0){
+        remainder = number%2
+        number =Math.floor(number/2)
+        s2.push(remainder)
+    }
+    while(s2.isEmpty() === false){
+        str+= s2.pop()
+    }
+    return str
+}
